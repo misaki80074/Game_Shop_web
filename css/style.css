@@ -243,8 +243,10 @@ header a:hover {
     padding: 50px 400px 100px;
 }
 /* button 樣式 */
-button,
-button:focus {
+.btn button,
+.teach_btn button,
+.btn:focus,
+.teach_btn:focus {
     position: relative;
     min-width: 200px;
     background-color: black;
@@ -258,13 +260,15 @@ button:focus {
     transition-duration: 0.4s;
     padding: 10px 20px;
 }
-button:hover {
+.btn button:hover,
+.teach_btn button:hover {
     background-color: #3a3a3a;
     color: white;
     transition-duration: 0.1s;
     cursor: pointer;
 }
-button::after {
+.btn button::after,
+.teach_btn button::after {
     content: "";
     display: block;
     position: absolute;
@@ -277,12 +281,14 @@ button::after {
     box-shadow: 0 0 10px 40px white;
     border-radius: 4em;
 }
-button:active::after {
+.btn button:active::after,
+.teach_btn button:active::after {
     opacity: 1;
     transition: 0s;
     box-shadow: 0 0 0 0 white;
 }
-button:active {
+.btn button:active,
+.teach_btn button:active {
     top: 1px;
 }
 
@@ -343,13 +349,16 @@ footer {
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 .goTop a {
     text-decoration: none;
     color: black;
+    
 }
 .goTop:hover {
-    color: #3a3a3a;
+    color: grey;
     box-shadow: 0 3px 3px 0px;
 }
 
@@ -386,7 +395,7 @@ footer {
     .menu {
         display: block;
         background-color: transparent;
-        color: white;
+        color: black;
         font-size: 35px;
         position: absolute;
         top: 15px;
