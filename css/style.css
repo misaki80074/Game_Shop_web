@@ -1,0 +1,422 @@
+/* 全站樣式 */
+* {
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+/* 頁首樣式 */
+header {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+h1 {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    width: 200px;
+}
+h1 a {
+    opacity: 0;
+}
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+header a {
+    color: black;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.menu {
+    display: none;
+}
+
+/* Body樣式 */
+/* slide class */
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.3);
+}
+.slideShow img {
+    height: 600px;
+    object-fit: cover;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+.slideShow img:hover {
+    transform: scale(1);
+    transition: 0.5s;
+}
+.slideShow {
+    background-color: dimgrey;
+    position: relative;
+    text-align: center;
+    transition: 2s;
+    user-select: none;
+    padding: 15px 0 20px 0;
+}
+.slide_item {
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+.slide_arraw {
+    padding: 20px;
+    position: absolute;
+    line-height: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.slide_arraw:hover {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.6 ease;
+}
+.slide_arraw--prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.slide_arraw--next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.slide_dot {
+    padding: 5px 5px;
+    display: flex;
+    position: absolute;
+    /* bottom: 0px; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* PickUp class */
+.PickUp h2 {
+    font-size: 40px;
+    margin: 30px 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.pick_up_bannar img{
+    width: 480px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+.PickUp {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* store class */
+.store {
+    display: flex;
+    border-top: 1px solid black;
+    background-color: #dcdcdc;
+}
+.map {
+    width: 50%;
+    height: 400px;
+}
+.map iframe {
+    display: flex;
+    margin: auto;
+    padding-top: 8%;
+    width: 400px;
+    height: 300px;
+    border: none;
+}
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.info li {
+    font-size: 20px;
+    padding-top: 3%;
+    list-style: none;
+}
+.info p {
+    font-size: 20px;
+}
+
+/* news class */
+.news_div {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: top;
+    padding: 50px 100px 50px;
+}
+.news_h2 {
+    font-size: 40px;
+    margin: 40px 0 0 0;
+    align-items: center;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.news_div .news{
+    width: 300px;
+    text-align: center;
+    padding: 0 20px;
+}
+.news_div img {
+    width: 100%;
+    border-radius: 10px;
+    top: 0%;
+}
+.news_div h3 {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+.news_div p {
+    font-size: 14px;
+    line-height: 1.6em;
+}
+.news_div a {
+    color: black;
+    text-decoration: none;
+}
+.news_div a:hover {
+    color: blue;
+}
+.news_sec .btn {
+    font-family: 'Bebas Neue', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+/* howtoplay class */
+.howtoplay {
+    background-image: url("../images/background.JPG");
+    width: 100%;
+    object-fit: cover;
+}
+.howtoplay h2 {
+    border-top: 1px solid black;
+    font-size: 40px;
+    margin: 40px 0 0 0;
+    padding-top: 70px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.howtoplay .teach_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 400px 100px;
+}
+/* button 樣式 */
+button,
+button:focus {
+    position: relative;
+    min-width: 200px;
+    background-color: black;
+    border-radius: 4em;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+}
+button:hover {
+    background-color: #3a3a3a;
+    color: white;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+    border-radius: 4em;
+}
+button:active::after {
+    opacity: 1;
+    transition: 0s;
+    box-shadow: 0 0 0 0 white;
+}
+button:active {
+    top: 1px;
+}
+
+/* newsletter class */
+.newsletter {
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter p {
+    margin-bottom: 20px;
+}
+.newsletter input, .newsletter button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #949d9a;
+    padding: 10px;
+    border-radius: 5px;
+}
+.newsletter input {
+    width: 200px;
+    margin-right: 15px;
+}
+.newsletter button {
+    width: 80px;
+    cursor: pointer;
+}
+input::placeholder {
+    color: #dddddd;
+}
+input:focus {
+    outline: none;
+    border-color: #e0e9a3;
+}
+
+/* 頁尾 */
+footer {
+    background-color: black;
+    color: #b7b7b7;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* goTop class */
+.goTop {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.goTop a {
+    text-decoration: none;
+    color: black;
+}
+.goTop:hover {
+    color: #3a3a3a;
+    box-shadow: 0 3px 3px 0px;
+}
+
+/* JS */
+.active,
+.dot:hover {
+    background: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
+.fades {
+    animation: 1.5s fades;
+}
+
+@keyframes fades {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+
+/* 響應式設計語法 */
+@media screen and (max-width: 768px) {
+    /* 頁首 */
+    header ul {
+        display: none;
+    }
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .menu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Body */
+    .news h2 {
+        font-size: 40px;
+    }
+    .shop {
+        flex-direction: column;
+    }
+    .shop img {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .info h2 {
+        font-size: 30px;
+    }
+    .product {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .product div {
+        margin-bottom: 30px;
+    }
+}
