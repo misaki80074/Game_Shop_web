@@ -25,6 +25,10 @@ h3 {
     font-size: 25px;
     margin: 30px 0 30px 50px;
 }
+h4 {
+    font-size: larger;
+    margin: 30px 0 30px 60px;
+}
 hr {
     border: 0;
     height: 1px;
@@ -150,7 +154,9 @@ button:hover::after {
     height: 530px;
     border-radius: 50px 0 50px 0;
 }
-.checkCardUse {
+.checkCardUse,
+.nav_div_1,
+.nav_video {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,17 +165,13 @@ button:hover::after {
 .checkCardUse img {
     width: 50%;
 }
-h4 {
-    font-size: larger;
-    margin: 30px 0 30px 60px;
-}
-.contest p {
+.contest p,
+.nav_p {
     margin: 0 60px;
 }
 .cardList_3col {
     display: flex;
     justify-content: space-between;
-    /* flex-direction: column; */
     align-items: center;
     margin: 10px 0px;
     font-size: 18px;
@@ -204,4 +206,36 @@ ul {
 }
 .howtoplay_nav_btn a {
     padding-left: 20px;
+}
+
+/* 新手指南 頁面 */
+.nav_div_1_text h4,
+.nav_video_text h4 {
+    margin: 0 0 30px 0;
+}
+.nav_div_1_text p,
+.nav_video_text p {
+    margin: 0;
+}
+.nav_div_1 {
+    padding: 0 60px;
+}
+.nav_div_1 a {
+    margin-top: 30px;
+}
+.nav_div_1 img {
+    vertical-align: top;
+}
+.nav_div_1 a:hover {
+    box-shadow : 5px 5px 5px rgba(0,0,0,0.5);
+}
+.nav_video {
+    align-items: flex-start;
+    padding-left: 50px;
+}
+.nav_video_text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    
 }
