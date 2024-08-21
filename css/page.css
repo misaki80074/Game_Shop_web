@@ -1,25 +1,91 @@
 /* 全域樣式 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100..900&display=swap');
 body {
-    background-image: url("../images/page_background.jpg");
+    background-image: url("../images/background_card.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto;
     background-attachment: fixed;
 }
 main {
-    margin: 60px 150px 0;
+    margin: 60px 150px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
+    padding-bottom: 50px;
 }
 p {
     line-height: 35px;
-    font-size: 16px;
+    font-size: 18px;
 }
 h2 {
     margin: 40px 0 10px;
     padding-left: 30px;
 }
+h3 {
+    font-size: 25px;
+    margin: 30px 0 30px 50px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    margin-top: 30px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+}
+a:hover {
+    text-decoration: underline gray 1.3px;
+}
+button,
+button:focus {
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    border: 2px solid #d24d57;
+    border-radius: 0;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    padding: 10px 20px;
+}
+button:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    background: #d24d57;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition:  all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+button:hover {
+    color: #ffffff;
+    text-shadow: none;
+}
+button:hover::after {
+    height: 450%;
+}
 
+/* about頁面樣式 */
 /* information class */
 .about {
     display: flex;
@@ -54,4 +120,73 @@ h2 {
 .info li {
     font-size: 16px;
     line-height: 35px;
+}
+
+
+/* howtoplay頁面樣式 */
+.howtoplay_h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+}
+.howtoplay_h3 {
+    font-size: 25px;
+    margin: 30px 0 30px;
+}
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video_div {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    height: 500px;
+    border-radius: 50px 0 50px 0;
+}
+.checkCardUse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.checkCardUse img {
+    width: 50%;
+}
+h4 {
+    font-size: larger;
+    margin: 30px 0 30px 60px;
+}
+.contest p {
+    margin: 0 60px;
+}
+.cardList_3col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 80px;
+    font-size: 18px;
+}
+.cardList {
+    margin: 10px 80px;
+    font-size: 18px;
+}
+ul {
+    line-height: 1.5;
+}
+.rules_div {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: top; */
+    text-align: left;
+    padding: 0 80px;
+}
+.rules_div p {
+    width: 75%;
 }
