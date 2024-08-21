@@ -16,4 +16,4 @@ footer.innerHTML = '<p>CopyRight © 2024 牌牌樂 HAPPY CARD GAME All Rights Re
 
 // goTop
 var goTop = document.getElementById("goTop");
-goTop.innerHTML = '<a href="#">↑<br>TOP</a>';
+goTop.innerHTML = '<a href="#">︿<br>TOP</a>';
