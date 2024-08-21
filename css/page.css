@@ -1,5 +1,5 @@
 /* 全域樣式 */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100..900&display=swap'); */
 body {
     background-image: url("../images/background_card.png");
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@ a {
     font-family: 'Bebas Neue', sans-serif;
 }
 a:hover {
-    text-decoration: underline gray 1.3px;
+    color: #d24d57;
 }
 button,
 button:focus {
@@ -59,7 +59,7 @@ button:focus {
     transition: all 1s ease;
     padding: 10px 20px;
 }
-button:after {
+button::after {
     content: "";
     position: absolute;
     height: 0%;
@@ -118,7 +118,7 @@ button:hover::after {
     
 }
 .info li {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 35px;
 }
 
@@ -131,7 +131,7 @@ button:hover::after {
 }
 .howtoplay_h3 {
     font-size: 25px;
-    margin: 30px 0 30px;
+    margin: 0 0 30px;
 }
 .play {
     display: flex;
@@ -147,7 +147,7 @@ button:hover::after {
     align-items: center;
     flex-direction: column;
     width: 900px;
-    height: 500px;
+    height: 530px;
     border-radius: 50px 0 50px 0;
 }
 .checkCardUse {
@@ -169,24 +169,39 @@ h4 {
 .cardList_3col {
     display: flex;
     justify-content: space-between;
+    /* flex-direction: column; */
     align-items: center;
-    margin: 10px 80px;
+    margin: 10px 0px;
     font-size: 18px;
 }
 .cardList {
-    margin: 10px 80px;
     font-size: 18px;
 }
 ul {
     line-height: 1.5;
+    margin: 0 90px;
 }
 .rules_div {
     display: flex;
     justify-content: space-between;
-    /* align-items: top; */
     text-align: left;
     padding: 0 80px;
 }
 .rules_div p {
     width: 75%;
+}
+.howtoplay_nav {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 80px 0;
+    border-radius: 5px;
+}
+.howtoplay_nav_btn {
+    margin-bottom: 50px;
+}
+.howtoplay_nav_btn a {
+    padding-left: 20px;
 }
