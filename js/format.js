@@ -11,7 +11,7 @@ nav.innerHTML = '<ul><li><a href="./about.html">關於我們</a></li><li><a href
 
 // footer
 var footer = document.getElementById("myFooter");
-footer.innerHTML = '<p>CopyRight © 2024 牌牌樂 HAPPY CARD GAME All Rights Reserved.</p>';
+footer.innerHTML = '<p>© 2024 牌牌樂 HAPPY CARD GAME</p>';
 
 
 // goTop
