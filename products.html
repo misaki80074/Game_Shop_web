@@ -344,16 +344,21 @@
         var otherItems = document.getElementById("otherItems_div");
         var surroundingGoods = document.getElementById("surroundingGoods_div");
 
-        // var ep_btn = document.getElementById("ep_btn");
-        // var cd_btn = document.getElementById("cd_btn");
-        // var oi_btn = document.getElementById("oi_btn");
-        // var sg_btn = document.getElementById("sg_btn");
+        var ep_btn = document.getElementById("ep_btn");
+        var cd_btn = document.getElementById("cd_btn");
+        var oi_btn = document.getElementById("oi_btn");
+        var sg_btn = document.getElementById("sg_btn");
 
         function expantionPack_ch() {
             expantionPack.style.display = 'block';
             constructionDeck.style.display = 'none';
             otherItems.style.display = 'none';
             surroundingGoods.style.display ='none';
+
+            ep_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
+            cd_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            oi_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            sg_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
         }
 
         function constructionDeck_ch() {
@@ -361,6 +366,11 @@
             constructionDeck.style.display = 'block';
             otherItems.style.display = 'none';
             surroundingGoods.style.display ='none';
+
+            ep_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            cd_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
+            oi_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            sg_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
         }
 
         function otherItems_ch() {
@@ -368,6 +378,11 @@
             constructionDeck.style.display = 'none';
             otherItems.style.display = 'block';
             surroundingGoods.style.display ='none';
+
+            ep_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            cd_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            oi_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
+            sg_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
 
         }
 
@@ -377,10 +392,10 @@
             otherItems.style.display = 'none';
             surroundingGoods.style.display ='block';
 
-            // ep_btn.style.backgroundColor = "transparent";
-            // cd_btn.style.backgroundColor = "transparent";
-            // oi_btn.style.backgroundColor = "transparent";
-            // sg_btn.style.backgroundColor = "#dcdcdc";
+            ep_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            cd_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            oi_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
+            sg_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
         }
     </script>
 </body>

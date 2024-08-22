@@ -202,7 +202,7 @@ ul {
 .product_catogory ul {
     display: inline-block;
     text-align: center;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.8);
     border-radius: 10px;
     border: 1px solid black;
     padding: 1px;
@@ -254,6 +254,12 @@ ul {
 .products_item {
     padding: 50px 0;
     border-bottom: 1px solid black;
+}
+#ep_btn {
+    background-color: #cdcdcd;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
 }
 .constructionDeck_div,
 .otherItems_div,
