@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遊戲玩法</title>
+    <title>商品資訊</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/page.css">
 </head>
@@ -16,12 +16,372 @@
     </header>
 
     <main>
-        
+        <h2 class="howtoplay_h2">商品資訊</h2>
+        <div class="product_catogory">
+            <ul>
+                <li><button id="ep_btn" class="expantionPack" onclick="expantionPack_ch()">擴充包</button></li>
+                <li><button id="cd_btn" class="constructionDeck" onclick="constructionDeck_ch()">構築牌組</button></li>
+                <li><button id="oi_btn" class="otherItems" onclick="otherItems_ch()">其他牌組</button></li>
+                <li><button id="sg_btn" class="surroundingGoods" onclick="surroundingGoods_ch()">周邊道具</button></li>
+            </ul>
+        </div>
+
+        <div id="expantionPack_div" class="expantionPack_div">
+            <ul class="product_list">
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv7/" target="_blank"><img src="./images/products/expantionPack_p1.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">擴充包「星晶奇跡」</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv7/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7855/" target="_blank"><img src="./images/products/expantionPack_p2.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">強化擴充包「黑夜漫遊者」</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7855/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv6/" target="_blank"><img src="./images/products/expantionPack_p3.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">擴充包「變幻假面」</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv6/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7445/" target="_blank"><img src="./images/products/expantionPack_p4.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">強化擴充包「緋紅薄霧」</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7445/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv5/" target="_blank"><img src="./images/products/expantionPack_p5.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">擴充包「狂野之力」</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv5/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv5/" target="_blank"><img src="./images/products/expantionPack_p6.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">擴充包「異度審判」</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv5/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="constructionDeck_div" class="constructionDeck_div">
+            <ul class="product_list">
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><img src="./images/products/constructionDeck_p1.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">戰術牌組 魔幻假面喵ex</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><img src="./images/products/constructionDeck_p2.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">戰術牌組 太晶噴火龍ex</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><img src="./images/products/constructionDeck_p3.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">戰術牌組 密勒頓ex</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><img src="./images/products/constructionDeck_p4.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">戰術牌組 沙奈朵ex</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><img src="./images/products/constructionDeck_p5.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">戰術牌組 太晶烈咬陸鯊ex</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><img src="./images/products/constructionDeck_p6.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">戰術牌組 巨鉗螳螂ex</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/svt/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="otherItems_div" class="otherItems_div">
+            <ul class="product_list">
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv7/" target="_blank"><img src="./images/products/otherItems_p1.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">星晶奇跡 收藏家組合</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archive/special/card/sv7/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8101/" target="_blank"><img src="./images/products/otherItems_p2.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">特別卡組 寶可夢地平線：系列</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8101/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7604/" target="_blank"><img src="./images/products/otherItems_p3.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">變幻假面 收藏家組合</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7604/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7144/" target="_blank"><img src="./images/products/otherItems_p4.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">歡天喜地組合 妙蛙花</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7144/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7144/" target="_blank"><img src="./images/products/otherItems_p5.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">歡天喜地組合 噴火龍</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7144/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7144/" target="_blank"><img src="./images/products/otherItems_p6.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">歡天喜地組合 水箭龜</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/7144/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="surroundingGoods_div" class="surroundingGoods_div">
+            <ul class="product_list">
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><img src="./images/products/surroundingGoods_p1.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">寶可夢造型卡套<br>太樂巴戈斯(星晶太晶)</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><img src="./images/products/surroundingGoods_p2.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">寶可夢卡牌收納盒<br>太樂巴戈斯(星晶太晶)</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><img src="./images/products/surroundingGoods_p3.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">寶可夢造型卡套<br>紫竽&布魯皇</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><img src="./images/products/surroundingGoods_p4.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">寶可夢卡牌收納盒<br>紫竽&布魯皇</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><img src="./images/products/surroundingGoods_p5.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">寶可夢造型卡套<br>小仙奶&麻花犬</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+
+                <li class="products_item">
+                    <div class="products_img">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><img src="./images/products/surroundingGoods_p6.png"></a>
+                    </div>
+                    <div class="products_detals">
+                        <p class="products_name">寶可夢造型卡套<br>乘龍(星晶太晶)</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://asia.pokemon-card.com/tw/archives/8250/" target="_blank"><button class="btn">商品資訊</button></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="goTop" class="goTop"></div>
     </main>
 
     <footer id="myFooter"></footer>
 
     <!-- JS存放區 -->
     <script src="./js/format.js"></script>
+
+    <script>
+        var expantionPack = document.getElementById("expantionPack_div");
+        var constructionDeck = document.getElementById("constructionDeck_div");
+        var otherItems = document.getElementById("otherItems_div");
+        var surroundingGoods = document.getElementById("surroundingGoods_div");
+
+        // var ep_btn = document.getElementById("ep_btn");
+        // var cd_btn = document.getElementById("cd_btn");
+        // var oi_btn = document.getElementById("oi_btn");
+        // var sg_btn = document.getElementById("sg_btn");
+
+        function expantionPack_ch() {
+            expantionPack.style.display = 'block';
+            constructionDeck.style.display = 'none';
+            otherItems.style.display = 'none';
+            surroundingGoods.style.display ='none';
+        }
+
+        function constructionDeck_ch() {
+            expantionPack.style.display = 'none';
+            constructionDeck.style.display = 'block';
+            otherItems.style.display = 'none';
+            surroundingGoods.style.display ='none';
+        }
+
+        function otherItems_ch() {
+            expantionPack.style.display = 'none';
+            constructionDeck.style.display = 'none';
+            otherItems.style.display = 'block';
+            surroundingGoods.style.display ='none';
+
+        }
+
+        function surroundingGoods_ch() {
+            expantionPack.style.display = 'none';
+            constructionDeck.style.display = 'none';
+            otherItems.style.display = 'none';
+            surroundingGoods.style.display ='block';
+
+            // ep_btn.style.backgroundColor = "transparent";
+            // cd_btn.style.backgroundColor = "transparent";
+            // oi_btn.style.backgroundColor = "transparent";
+            // sg_btn.style.backgroundColor = "#dcdcdc";
+        }
+    </script>
 </body>
 </html>
