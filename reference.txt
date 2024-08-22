@@ -9,3 +9,5 @@ https://hackmd.io/@A-Min-Design/SySzvgP8t
 https://monahousehold.blogspot.com/2017/05/hr.html
 https://medium.com/%E7%8B%97%E5%A5%B4%E5%B7%A5%E7%A8%8B%E5%B8%AB/css-flexbox-%E4%BC%B8%E7%B8%AE%E8%87%AA%E5%A6%82%E7%9A%84%E6%8E%92%E7%89%88-%E5%9F%BA%E7%A4%8E%E8%A7%80%E5%BF%B5-85ffe3ae44b3
 https://blog.csdn.net/weixin_57348768/article/details/121713088
+https://www.fooish.com/javascript/dom/css.html
+https://seanacnet.com/html/details-and-summary/
