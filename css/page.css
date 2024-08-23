@@ -314,3 +314,7 @@ summary {
     padding: 20px;
     border: 1px solid gray;
 }
+.event_dels img {
+    margin: auto;
+    display: block;
+}
