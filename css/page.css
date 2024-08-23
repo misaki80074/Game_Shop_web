@@ -314,6 +314,66 @@ summary {
     border: 1px solid gray;
 }
 .event_dels img {
-    margin: auto;
+    margin: 10px auto;
     display: block;
+}
+.train_stage {
+    display: flex;
+    justify-content: center;
+}
+.train_stage_img {
+    display: block;
+    margin: auto;
+}
+.train_stage_img img {
+    margin: 20px 0;
+}
+.train_stage_dels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: space-between; */
+}
+.train_stage_dels button,
+.challenge_list_1 button,
+.challenge_list_2 button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.train_stage_dels a {
+    font-family: 'Bebas Neue', sans-serif;
+    width: 196px;
+    height: 60px;
+}
+.train_stage_dels button:hover,
+.challenge_list_1 button:hover,
+.challenge_list_2 button:hover {
+    color: grey;
+    border: 1px solid grey;
+    cursor: pointer;
+    background-color: white;
+}
+.train_stage_1,
+.train_stage_2 {
+    margin: 35px 0 30px -20px;
+    /* margin-left: -20px; */
+}
+.train_stage_1 .train_stage_img_1 {
+    padding-right: 50px;
+    text-align: left;
+}
+.challenge_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.challenge_list_1 button,
+.challenge_list_2 button {
+    width: 300px;
+    margin: 20px 20px 30px;
 }
