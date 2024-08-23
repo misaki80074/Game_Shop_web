@@ -122,7 +122,8 @@ a {
 }
 .contest p,
 .nav_p,
-.event_p {
+.event_p,
+.contact_p {
     margin: 0 60px;
 }
 .cardList_3col {
@@ -376,4 +377,80 @@ summary {
 .challenge_list_2 button {
     width: 300px;
     margin: 20px 20px 30px;
+}
+
+/* 聯絡我們 頁面 */
+ .ques_list select{
+    margin: 20px 60px;
+    width: 400px;
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+.ques_list option {
+    font-size: 18px;
+}
+form {
+    margin-top: 30px;
+}
+form .input_1,
+form .input_2 {
+    margin: 0 60px 25px;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+form .input_2 {
+    width: 600px;
+    height: 300px;
+    text-align: top left;
+    box-sizing: border-box;
+}
+form .input_2 ::placeholder {
+    position: relative;
+    text-align: left;
+    line-height: 1.9em;
+    top: 500px;
+}
+.input_1:focus,
+.input_2:focus {
+    outline: none;
+    background-color: white;
+}
+input:required:valid {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+input:required:focus:invalid {
+    border-color: red;
+}
+.submit_btn {
+    background-color: white;
+    margin: 0 60px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px 50px;
+}
+.submit_btn:hover {
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+}
+form span {
+    color: red;
+    font-size: smaller;
+    vertical-align: text-bottom;
+} 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }

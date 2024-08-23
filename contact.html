@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+
+<body>
+    <p id="menu_btn"></p>
+    <header>
+        <h1 id="logo_h1"></h1>
+        <nav id="nav"></nav>
+    </header>
+
+    <main>
+        <h2 class="howtoplay_h2">聯絡我們</h2>
+        <p class="contact_p">感謝你利用此頁面！請根據你的問題，從以下選擇你的諮詢內容。</p>
+        <div class="ques_list">
+            <select>
+                <option value="0">-</option>
+                <option value="1">對敝店的相關諮詢</option>
+                <option value="2">商品資訊相關的問題</option>
+                <option value="3">主辦活動相關的問題</option>
+                <option value="4">官方賽制相關的問題</option>
+                <option value="5">對敝店的意見提供</option>
+            </select>
+        </div>
+        <ul>
+            <li><p>我們將於 3 個工作天內回覆，個別諮詢內容可能需要更長時間處理。</p></li>
+            <li><p>諮詢來信請務必輸入「電子郵件地址」以利回覆。</p></li>
+        </ul>
+        <hr>
+        
+        <form name="form">
+            <p class="contact_p">暱稱<span>*</span></p>
+            <input class="input_1" type="text" name="neckname" required="required" id="neckname">
+
+            <p class="contact_p">電子郵件地址<span>*</span></p>
+            <input class="input_1" type="email" name="email_addr" required="required" id="email">
+            
+            <p class="contact_p">問題主旨<span>*</span></p>
+            <input class="input_1" type="text" name="ques_title" required="required" id="ques_title">
+            
+            <p class="contact_p">欲諮詢的詳細內容<span>*</span></p>
+            <textarea name="ques_dels" class="input_2" id="ques_dels"></textarea>
+            
+            <br>
+            <!-- <input type="submit" value="送出" class="submit_btn" onclick="alert('表單送出完成！');"> -->
+            <button class="submit_btn" id="submit_btn">送出</button>
+        </form>
+    
+        <div id="goTop" class="goTop"></div>
+    </main>
+
+    <footer id="myFooter"></footer>
+
+    <!-- JS存放區 -->
+    <script src="./js/format.js"></script>
+
+    <script>
+        function check() {
+            var submit_btn = document.getElementById("submit_btn");
+
+            var neckname = document.forms["form"]["neckname"].value;
+            var email = document.forms["form"]["email_addr"].value;
+            var ques_title = document.forms["form"]["ques_title"].value;
+            var ques_dels = document.forms["form"]["ques_dels"].value;
+
+            if ( neckname == "" || email == "" || ques_title == "" || ques_dels == "") {
+                alert("表單尚未填寫完");
+            }
+            else {
+                alert("表單已送出完成");
+            }
+        }
+
+        submit_btn.addEventListener("click", check);
+
+    </script>
+</body>
+</html>
