@@ -40,10 +40,6 @@ a {
     color: black;
     font-family: 'Bebas Neue', sans-serif;
 }
-a:hover {
-    color: #d24d57;
-}
-
 
 /* about頁面樣式 */
 /* information class */
@@ -98,6 +94,9 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.play a:hover {
+    color: #d24d57;
 }
 .video_div {
     text-align: center;
