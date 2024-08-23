@@ -11,3 +11,5 @@ https://medium.com/%E7%8B%97%E5%A5%B4%E5%B7%A5%E7%A8%8B%E5%B8%AB/css-flexbox-%E4
 https://blog.csdn.net/weixin_57348768/article/details/121713088
 https://www.fooish.com/javascript/dom/css.html
 https://seanacnet.com/html/details-and-summary/
+https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete
+https://ithelp.ithome.com.tw/m/articles/10302652
