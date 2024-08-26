@@ -17,3 +17,12 @@ footer.innerHTML = '<p>© 2024 牌牌樂 HAPPY CARD GAME</p>';
 // goTop
 var goTop = document.getElementById("goTop");
 goTop.innerHTML = '<a href="#">︿<br>TOP</a>';
+
+
+
+var menu = document.getElementById('menu_btn');
+var nav = document.getElementById('nav');
+
+menu.addEventListener('click', () => {
+    nav.classList.toggle('opening');
+});
