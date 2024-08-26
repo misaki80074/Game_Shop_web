@@ -380,8 +380,8 @@ summary {
 }
 
 /* 聯絡我們 頁面 */
- .ques_list select{
-    margin: 20px 60px;
+ #choice {
+    margin: 0 60px 30px;
     width: 400px;
     padding: 8px;
     font-size: 18px;
@@ -426,7 +426,8 @@ input:required:valid {
     background-color: white;
     border: 1px solid #ddd;
 }
-input:required:focus:invalid {
+input:required:focus:invalid,
+textarea:required:focus:invalid {
     border-color: red;
 }
 .submit_btn {
@@ -448,6 +449,8 @@ form span {
     font-size: smaller;
     vertical-align: text-bottom;
 } 
+
+/* 解決Chrome瀏覽器input藍色底問題 */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
