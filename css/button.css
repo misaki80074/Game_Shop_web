@@ -1,6 +1,8 @@
 /* 紅色的btn */
-button,
-button:focus {
+.play_btn,
+.pdf_btn,
+.play_btn:focus,
+.pdf_btn:focus {
     position: relative;
     z-index: 1;
     min-width: 200px;
@@ -19,7 +21,8 @@ button:focus {
     transition: all 1s ease;
     padding: 10px 20px;
 }
-button::after {
+.play_btn::after,
+.pdf_btn::after {
     content: "";
     position: absolute;
     height: 0%;
@@ -37,10 +40,12 @@ button::after {
     -o-transition:  all 0.75s ease 0s;
     transition: all 0.75s ease 0s;
 }
-button:hover {
+.play_btn:hover,
+.pdf_btn:hover {
     color: #ffffff;
     text-shadow: none;
 }
-button:hover::after {
+.play_btn:hover::after,
+.pdf_btn:hover::after {
     height: 450%;
 }
