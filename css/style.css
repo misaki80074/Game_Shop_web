@@ -362,7 +362,7 @@ footer {
     box-shadow: 0 3px 3px 0px;
 }
 
-/* JS */
+/* slide JS */
 .active,
 .dot:hover {
     background: rgba(255, 255, 255, 0.9);
@@ -403,29 +403,58 @@ footer {
         border: none;
         cursor: pointer;
     }
+    
 
     /* Body */
-    .news h2 {
-        font-size: 40px;
+    .slideShow img {
+        max-width: 100%;
+        object-fit: contain;
     }
-    .shop {
+    .PickUp h2 {
+        margin: 5%;
+    }
+    .news_div {
         flex-direction: column;
+        padding: 10%;
+        align-items: center;
     }
-    .shop img {
-        width: 100%;
+    .news_div p {
+        padding-bottom: 10%;
+    }
+    .howtoplay {
+        max-width: 100%;
+        object-fit: fill;
+    }
+    .howtoplay .teach_btn {
+        flex-direction: column;
+        padding: 10%;
+    }
+    .howtoplay a {
+        padding: 5%;
+    }
+    .store {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map {
+        max-width: 100%;
+    }
+    .map iframe {
+        position: relative;
+        right: -50%;
+        transform: translateX(-50%);
+        margin-top: 10%;
     }
     .info {
-        width: 100%;
-        padding: 40px 0;
+        margin-bottom: 8%;
     }
     .info h2 {
-        font-size: 30px;
+        font-size: 40px;
+        margin: 0;
     }
-    .product {
-        flex-direction: column;
-        padding: 60px 0;
-    }
-    .product div {
-        margin-bottom: 30px;
+    .goTop {
+        bottom: 10%;
+        padding: 1%;
+        font-size: 12px;
     }
 }
