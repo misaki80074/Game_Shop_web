@@ -48,7 +48,6 @@
             <textarea name="ques_dels" class="input_2" id="ques_dels" required="required"></textarea>
             
             <br>
-            <!-- <input type="submit" value="送出" class="submit_btn" onclick="alert('表單送出完成！');"> -->
             <button class="submit_btn" id="submit_btn">送出</button>
         </form>
     
@@ -61,37 +60,49 @@
     <script src="./js/format.js"></script>
 
     <script>
-        function check_form() {
-            // 下拉式選單驗證
-            var selected = document.getElementById("choice");
-            var temp = 0;
+        // 下拉式選單驗證
+        var selected = document.getElementById("choice");
+        var check_num = 0;
 
+        function updateList() {
             if (selected.value == "") {
                 selected.style.cssText = 'border: 1px solid red; ';
                 alert("請選擇問題類型");
+                check_num = 0;
                 return false;
-                temp = 0;
             }
-            return true;
-            temp = 1;
-
-            // 問卷內容驗證
-            if (temp == 1) {
-                var submit_btn = document.getElementById("submit_btn");
-
-                var neckname = document.forms["form"]["neckname"].value;
-                var email = document.forms["form"]["email_addr"].value;
-                var ques_title = document.forms["form"]["ques_title"].value;
-                var ques_dels = document.forms["form"]["ques_dels"].value;
-
-                if ( neckname == "" || email == "" || ques_title == "" || ques_dels == "") {
-                    alert("表單尚未填寫完");
-                }
-                else {
-                    alert("表單已送出完成");
-                }
+            else {
+                selected.style.cssText = 'border: 1px solid #ddd; ';
+                check_num = 1;
+                return true;
             }
-    }
+        }
+        selected.addEventListener('change', updateList);
+        
+        // 問卷內容驗證
+        function check_form() {
+            var submit_btn = document.getElementById("submit_btn");
+
+            var neckname = document.forms["form"]["neckname"];
+            var email = document.forms["form"]["email_addr"];
+            var ques_title = document.forms["form"]["ques_title"];
+            var ques_dels = document.forms["form"]["ques_dels"];
+
+            if (check_num == 0) {
+                return false;
+            }
+            
+
+            if ( neckname.value == "" || email.value == "" || ques_title.value == "" || ques_dels.value == "") {
+                
+                alert("表單尚未填寫完整");
+            }
+            else {
+                alert("表單已送出完成！");
+            }
+        }
+        
+        submit_btn.addEventListener("click", updateList);
         submit_btn.addEventListener("click", check_form);
 
     </script>
