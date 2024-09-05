@@ -230,6 +230,7 @@ ul {
     height: 100%;
     width: 100%;
 }
+
 .product_catogory button:hover {
     color: gray;
     font-weight: bold;
@@ -259,7 +260,7 @@ ul {
     padding: 50px 0;
     border-bottom: 1px solid black;
 }
-#ep_btn {
+.expantionPack.pd_cg_btn {
     background-color: #cdcdcd;
     color: white;
     font-weight: bold;
@@ -269,6 +270,12 @@ ul {
 .otherItems_div,
 .surroundingGoods_div {
     display: none;
+}
+.product_catogory button.happened{
+    background-color: #cdcdcd;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 /* 最新活動 頁面 */

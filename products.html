@@ -19,14 +19,14 @@
         <h2 class="howtoplay_h2">商品資訊</h2>
         <div class="product_catogory">
             <ul>
-                <li><button id="ep_btn" class="expantionPack" onclick="expantionPack_ch()">擴充包</button></li>
-                <li><button id="cd_btn" class="constructionDeck" onclick="constructionDeck_ch()">構築牌組</button></li>
-                <li><button id="oi_btn" class="otherItems" onclick="otherItems_ch()">其他牌組</button></li>
-                <li><button id="sg_btn" class="surroundingGoods" onclick="surroundingGoods_ch()">周邊道具</button></li>
+                <li><button id="ep_btn" class="expantionPack pd_cg_btn" data-target="ep_div">擴充包</button></li>
+                <li><button id="cd_btn" class="constructionDeck pd_cg_btn" data-target="cd_div">構築牌組</button></li>
+                <li><button id="oi_btn" class="otherItems pd_cg_btn" data-target="oi_div">其他牌組</button></li>
+                <li><button id="sg_btn" class="surroundingGoods pd_cg_btn" data-target="sg_div">周邊道具</button></li>
             </ul>
         </div>
 
-        <div id="expantionPack_div" class="expantionPack_div">
+        <div id="ep_div" class="expantionPack_div pd_cg_div">
             <ul class="product_list">
                 <li class="products_item">
                     <div class="products_img">
@@ -102,7 +102,7 @@
             </ul>
         </div>
 
-        <div id="constructionDeck_div" class="constructionDeck_div">
+        <div id="cd_div" class="constructionDeck_div pd_cg_div">
             <ul class="product_list">
                 <li class="products_item">
                     <div class="products_img">
@@ -178,7 +178,7 @@
             </ul>
         </div>
 
-        <div id="otherItems_div" class="otherItems_div">
+        <div id="oi_div" class="otherItems_div pd_cg_div">
             <ul class="product_list">
                 <li class="products_item">
                     <div class="products_img">
@@ -254,7 +254,7 @@
             </ul>
         </div>
 
-        <div id="surroundingGoods_div" class="surroundingGoods_div">
+        <div id="sg_div" class="surroundingGoods_div pd_cg_div">
             <ul class="product_list">
                 <li class="products_item">
                     <div class="products_img">
@@ -330,6 +330,7 @@
             </ul>
         </div>
 
+
         <div id="goTop" class="goTop"></div>
     </main>
 
@@ -339,64 +340,26 @@
     <script src="./js/format.js"></script>
 
     <script>
-        var expantionPack = document.getElementById("expantionPack_div");
-        var constructionDeck = document.getElementById("constructionDeck_div");
-        var otherItems = document.getElementById("otherItems_div");
-        var surroundingGoods = document.getElementById("surroundingGoods_div");
+        const buttons = document.querySelectorAll('.pd_cg_btn');
+        const contents = document.querySelectorAll('.pd_cg_div');
 
-        var ep_btn = document.getElementById("ep_btn");
-        var cd_btn = document.getElementById("cd_btn");
-        var oi_btn = document.getElementById("oi_btn");
-        var sg_btn = document.getElementById("sg_btn");
+        var ep_btn = document.getElementById('ep_btn');
 
-        function expantionPack_ch() {
-            expantionPack.style.display = 'block';
-            constructionDeck.style.display = 'none';
-            otherItems.style.display = 'none';
-            surroundingGoods.style.display ='none';
 
-            ep_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
-            cd_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            oi_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            sg_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-        }
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('happened'));
+                ep_btn.classList.remove('pd_cg_btn');
+                button.classList.add('happened');
 
-        function constructionDeck_ch() {
-            expantionPack.style.display = 'none';
-            constructionDeck.style.display = 'block';
-            otherItems.style.display = 'none';
-            surroundingGoods.style.display ='none';
+                contents.forEach(content => content.style.display = 'none');
 
-            ep_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            cd_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
-            oi_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            sg_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-        }
+                const targetId = button.dataset.target;
+                const targetDiv = document.getElementById(targetId);
+                targetDiv.style.display = 'block';
+            });
+        })
 
-        function otherItems_ch() {
-            expantionPack.style.display = 'none';
-            constructionDeck.style.display = 'none';
-            otherItems.style.display = 'block';
-            surroundingGoods.style.display ='none';
-
-            ep_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            cd_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            oi_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
-            sg_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-
-        }
-
-        function surroundingGoods_ch() {
-            expantionPack.style.display = 'none';
-            constructionDeck.style.display = 'none';
-            otherItems.style.display = 'none';
-            surroundingGoods.style.display ='block';
-
-            ep_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            cd_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            oi_btn.style.cssText = 'background-color: transparent; color: black; font-weight: normal;';
-            sg_btn.style.cssText = 'background-color: #cdcdcd; color: white; font-weight: bold; border-radius: 10px;';
-        }
     </script>
 </body>
 </html>
