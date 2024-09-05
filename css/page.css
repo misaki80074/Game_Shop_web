@@ -655,6 +655,19 @@ input:-webkit-autofill:active {
         top: auto;
     }
 
+    /* 商品資訊 頁面 */
+    .product_catogory {
+        margin: 0;
+    }
+    .product_catogory ul {
+        margin: 0;
+    }
+    .product_catogory li {
+        width: 100%;
+        height: 50px;
+    }
+    
+
     /* 聯絡我們 頁面 */
     #choice {
         width: 70%;
